@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1 {
+  color: #8888ff;
+}
+nav #html,
+#css,
+#js {
+  text-align: center;
+  color: #6666ff;
+  margin: 0px 4px;
+}
+nav #html:hover,
+#css:hover,
+#js:hover {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin: 10px 4px;
+}
+header {
+  width: 980px;
+  height: 100px;
+  margin: 0px auto;
+}
+#main {
+  width: 980px;
+  margin: 0px auto;
+  overflow: hidden;
+  /*子元素有高度 父元素没有,为了实现父元素可以适应应用了float属性的子元素的高度，需要对父元素做一个小处理，即对父元素的CSS样式应用overflow: hidden;*/
+}
+#double_col {
+  width: 780px;
+  margin-left: 198px;
+  float: left;
+}
+#center {
+  width: 540px;
+  border: #000000 solid 1px;
+  float: left;
+  padding: 4px;
+}
+.center p {
+  color: #7777ff;
+}
+.center h2 {
+  color: #6666ff;
+}
+.center .entry {
+  margin-bottom: 10px;
+  border-bottom: solid #ddddff 1px;
+  padding-bottom: 30px;
+  color: #6666ff;
+}
+#right {
+  width: 202px;
+  height: 200px;
+  border: #000000 solid 1px;
+  float: right;
+  padding: 4px;
+}
+#left {
+  width: 180px;
+  height: 300px;
+  border: #000000 solid 1px;
+  margin-left: -970px;
+  margin-right: 4px;
+  float: left;
+  padding: 4px;
+}
+footer {
+  width: 980px;
+  height: 200px;
+  margin: 0px auto;
+}
+#ie {
+  display: none;
+  width: 800px;
+  height: 600px;
+  background-image: url(ie-1.gif);
+  background-repeat: no-repeat;
+  margin: 100px 0px 0px 100px;
+  position: absolute;
+  top: 10px;
+}
+#ie p {
+  float: right;
+  margin: 130px 10px 0px 300px;
+  width: 360px;
+  color: #9966FF;
+  font-weight: 900;
+}
+.clear{ clear:both;}
+#pic-980{  width:980px;margin:0 auto;overflow:hidden;}
