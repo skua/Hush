@@ -1,39 +1,28 @@
 <?php
 /**
- *just for test by skua
- */
-
+* The main template file.
+*
+* This is the most generic template file in a WordPress theme
+* and one of the two required files for a theme (the other being style.css).
+* It is used to display a page when nothing more specific matches a query.
+* For example, it puts together the home page when no home.php file exists.
+*
+* Learn more: http://codex.wordpress.org/Template_Hierarchy
+*
+* @package WordPress
+* @subpackage Twenty_Twelve
+* @since Twenty Twelve 1.0
+*/
 get_header(); ?>
-
-<div id="double_col">
-  <div id="center">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<section class="center">
-     <h2><?php the_title(); ?></h2>
-      <article class="entry">
-         <?php the_content(); ?>
-      </article>
-    </section>
- <?php endwhile; else: ?>
-
- <p>Sorry, no posts matched your criteria.</p>
-
-       <?php endif; ?>
-        
-
-    </div>
-
-    
-    
+<div class="col-md-12">
+  <?php /* Start the Loop */ ?>
+  <?php while ( have_posts() ) : the_post(); ?>
+  <div class="post">
+    <h2><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
+    <div class="time"><P><?php the_date_xml(); ?></p></div>
+    <div><?php the_content();?></div>
   </div>
-
-    <nav id="left-nav"> 
-   
-      <ul>
-        <li><span class="html">&lt;</span><a id="html" title="样式诚可贵 脚本价更高 若为结构故 两者皆可抛">Html</a><span class="html">&gt;</span></li>
-        <li><span class="css">&#123;</span><a id="css"  title="若把样式比西子，浓妆淡抹总相宜。 ">Css</a><span class="css">&#125;</span></li>
-        <li><span class="js">&#40;</span><a id="js" title="脚本为之，则难者亦易矣，脚本不为，则易者亦难矣。">JavaScript</a><span class="js">&#41;</span></li>
-      </ul>
-    </nav>
-<?php get_sidebar(); ?>
+  <?php endwhile; ?>
+  
+</div>
 <?php get_footer(); ?>
