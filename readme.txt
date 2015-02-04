@@ -1,1 +1,1 @@
-for skua theme
+for Hush theme @ 2015 1 
