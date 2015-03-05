@@ -1,4 +1,5 @@
 body { background-color: #fff; color: #666; padding-top: 70px; word-wrap: break-word; }
+body a:hover{color: #33B5E5; text-decoration: none;}
 .navbar-default { background-color: #fff; border-color: #eee; }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { color: #33B5E5; background-color: #fff; }
 .navbar-default .navbar-brand { color: #333; }

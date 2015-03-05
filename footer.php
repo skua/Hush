@@ -2,7 +2,7 @@
 </div><!-- #main -->
 <footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
-    <p>by <a href="https://55u.me" target="_blank">@skua</a> .</p>
+    <p>by <a href="http://weibo.com/u/2277683201" target="_blank">@skua</a> .</p>
     
   </div>
   </footer><!-- #colophon -->
